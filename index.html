@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="above">
+      <h1 class="cityvalue">City</h1>
+      <!-- <br> -->
+    </div>
+
+    <div id="mainbox">
+      <div><h1>Weather Application</h1></div>
+      <div id="search">
+        <input
+          class="searchbar"
+          type="text"
+          placeholder="Enter the City Name i.e. Denver"
+        />
+        <button id="searchbutton">search</button>
+      </div>
+      <div id="info" class="information loading">
+        <div><h2 class="city">Weather in City</h2></div>
+        <div id="imgvalue">
+          <img class="icon" src="" alt="" />
+          <h1 class="tempvalue"></h1>
+          <!-- <h4 class="temperature">Temperature:</h4> -->
+        </div>
+        <div><h4 class="humidity">Humidity:</h4></div>
+        <div><h4 class="windspeed">Wind Speed:</h4></div>
+        <div><h4 class="description">Description:</h4></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

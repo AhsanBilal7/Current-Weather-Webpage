@@ -1,0 +1,132 @@
+
+
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'montserrat';
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    background: url(./1.jpg) no-repeat center center;
+}
+#imgvalue
+{
+    font-size: 19px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+body::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.63);
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    z-index: -1;
+}
+#mainbox
+{
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.information {
+    opacity: 1;
+    visibility:visible ;
+}
+.searchbar::placeholder
+{
+    color: rgba(240, 248, 255, 0.548);
+    font-size: 15px;
+    padding: 5px 0px;
+
+   
+}  
+.searchbar  
+{
+    height: 3.1vh;
+    border-radius: 4px;
+    width: 30vw;
+    padding: 5px 20px;
+    border: none;
+    
+    
+}
+#search
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#searchbutton
+{
+    cursor: pointer;
+    width: 10vw;
+    border: none;
+    border-radius: 10px;
+    height: 34px;
+    min-width: 60px;
+    font-size: 15px;
+    
+}
+#searchbutton,input[type = 'text']
+{
+    background-color: rgba(255, 255, 255, 0.411);
+    color: white;
+    border-radius: 40px;
+    justify-content: center;  
+    
+}
+
+input[type = 'text']
+{
+    font-size: 19px;
+    
+    padding-top: 5px;
+    height: 25px;  
+}
+#above
+{
+    position:absolute;
+    color: rgba(255, 255, 255, 0.61);
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    
+    
+    
+}
+.cityvalue
+{
+    margin: 10px 0px;
+    font-size: 70px;
+    text-align: center;
+    background-color: rgba(255, 228, 196, 0.329);
+    display: block;
+    text-transform: capitalize;
+
+    
+}
+
+.information.loading
+{
+    visibility: hidden;
+    display: none;
+    opacity:0;
+}
